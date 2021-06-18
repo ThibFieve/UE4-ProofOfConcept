@@ -19,11 +19,11 @@ There is a certain number of attempt allowed before losing !  The game keeps tra
 ![CaptureEscape](https://user-images.githubusercontent.com/17762123/122570685-4645bf00-d04c-11eb-975b-768fc5ab6f5e.PNG)
 
 
-Building Escape is a proof of concept/ Demo game made in the UE4. The assets are from the UE4 Market Place.
-You can run the game by launching the executable.
-This is more of a Tech Demo than a fully fledge game , as you can escape the room simply by going on the Statue alter , or by moving the statue from one to another.
+Building Escape is a proof of concept/ Demo game made in the UE4. The assets are from the UE4 Market Place.  
+You can run the game by launching the executable.  
+This is more of a Tech Demo than a fully fledge game , as you can escape the room simply by going on the Statue alter , or by moving the statue from one to another.  
 
-The goal of this game is to escape the room , by grabbing and moving objects. Press right click to grab objects.
+The goal of this game is to escape the room , by grabbing and moving objects. Press right click to grab objects.  
 
 The game has :  
 -Physics of object   
