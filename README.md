@@ -20,7 +20,7 @@ There is a certain number of attempt allowed before losing !  The game keeps tra
 
 
 Building Escape is a proof of concept/ Demo game made in the UE4. The assets are from the UE4 Market Place.  
-You can run the game by launching the executable from my Google Drive:https://drive.google.com/drive/folders/1lDEXv-LgYk_nElvTLPgUgmeytXX15CpQ?usp=sharing  
+You can run the game by launching the executable folder from my Google Drive:https://drive.google.com/drive/folders/1lDEXv-LgYk_nElvTLPgUgmeytXX15CpQ?usp=sharing  
 This is more of a Tech Demo than a fully fledge game , as you can escape the room simply by going on the Statue alter , or by moving the statue from one to another.  
 
 The goal of this game is to escape the room , by grabbing and moving objects. Press right click to grab objects.  
