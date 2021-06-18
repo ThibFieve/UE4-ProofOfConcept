@@ -21,14 +21,14 @@ There is a certain number of attempt allowed before losing !  The game keeps tra
 
 Building Escape is a proof of concept/ Demo game made in the UE4. The assets are from the UE4 Market Place.
 You can run the game by launching the executable.
-This is more of a Tetch Demo than a fully fledge game , as you can escape the room simply by going on the Statue alter , or by moving the statue from one to another.
+This is more of a Tech Demo than a fully fledge game , as you can escape the room simply by going on the Statue alter , or by moving the statue from one to another.
 
 The goal of this game is to escape the room , by grabbing and moving objects. Press right click to grab objects.
 
-The game has :
--Physics of object 
--Grabbing of Object-> Ray Casting
--Use of collision volume and trigger volumes 
--Physics Based collision : ie the door will only open if an Object heavy enough is put on the pressure plate.
+The game has :  
+-Physics of object   
+-Grabbing of Object-> Ray Casting  
+-Use of collision volume and trigger volumes   
+-Physics Based collision : ie the door will only open if an Object heavy enough is put on the pressure plate.  
 
 
