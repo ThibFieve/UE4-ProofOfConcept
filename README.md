@@ -35,4 +35,5 @@ The game has :
 
 
 
-<SPOILERS> You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
+# SPOILERS
+You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
