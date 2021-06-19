@@ -10,7 +10,8 @@ ProofOfConcepts UE4 Games made following along the Epic Games officially endorse
 
 
 
-The first Game is called Bull and Cows , it is a Terminal based game within the UE 4 Engine game , where the goal of the game is to find teh secret word.
+The first Game is called Bull and Cows , it is a Terminal based game within the UE 4 Engine game , where the goal of the game is to find the secret word.
+A bull is when one of the letter is the right letter in the right position, a cow is when a right letter is in the wrong position.
 
 There is a certain number of attempt allowed before losing !  The game keeps track of it.
 
