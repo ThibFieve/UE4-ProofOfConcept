@@ -33,3 +33,6 @@ The game has :
 -Physics Based collision : ie the door will only open if an Object heavy enough is put on the pressure plate.  
 -Hand Made Implementation of the Moon using BluePrints
 
+
+
+<SPOILERS> You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
