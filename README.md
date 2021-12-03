@@ -33,9 +33,6 @@ The game has :
 -Physics Based collision : ie the door will only open if an Object , or many of them are heavy enough  on the pressure plate.  
 -Hand Made Implementation of the Moon using BluePrints
 
-
-
-# SPOILERS
 You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
 
 
@@ -59,7 +56,7 @@ Download Link : https://drive.google.com/drive/folders/1OtRfFV0qTt6jlminwdeY_usQ
 
 
 # Simple Shooter
-Easily the most ambitious Unreal project I ahve made so far , i highly recommend to try it out.
+Easily the most ambitious Unreal project I have made so far , I highly recommend to try it out.
 ![Shoot1](https://user-images.githubusercontent.com/17762123/144608737-63f8b5c0-cade-41ba-8f37-ecb33f0803f3.PNG)
 
 ![![Shoot3](https://user-images.githubusercontent.com/17762123/144609146-1e625773-cf7e-4976-8e67-02524c70b8c5.PNG)
