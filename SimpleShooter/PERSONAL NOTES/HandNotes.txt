@@ -1,0 +1,148 @@
+
+CTRL+ P to do a research in the classes (like actor.h or world.h)
+
+
+
+PAwn vs carachter , 
+carachter have more human features , Nav Mesh movement
+Character and movement , * input  and function delegate
+
+Lesson 179 , Axis and gamepad input , gamepad is frame sensitive , need to be framerate independant
+180 Camera and spring Arm using blueprints ! Check the boc Use Pawn control rotation for the spring arm or you wont be able to look up and down
+
+
+//EInputEvent::IE_Pressed is an enum , special thing to say when pressed
+
+Lesson 181 , Skelettal animations
+Skelettal meshes are meshes that can be deformed for animation with skeletton 
+animation blueprints = AnimGraph  Lesson 183
+Lesson 184 , 2D blend space
+Lesson 185 , Liking bluepritn animation to blendsapce
+186 , Velocity is in world space and we want to calcualte it in local sapce !
+// right click to split a structure like rotator into  its compoentn , X,Y,Z
+lesson 187 Foot Sliding issue, tracking the speed of the ankle bone to get matching speed
+
+Lesson 188 , Gun and shooter , there no hierarchie of actors , only hierarchie of scene compoents
+adding component but through cpp  .   We make a gun class and  blueprint derived from it
+This means that in the scene there is a hierarchie as the gun is in the hand of the character , but gun is not a child of the carachter , tho we will make the character the OWNER of a gun , so the gun can call it
+
+
+lesson 189 Spawn the gun as a child of the shooter caracther
+
+
+//
+
+UPROPERTY(EditDefaultsOnly) // so we cannot cahnge at run time , begin play would ahve already been //called so nothing would be updated
+TSubclassOf<AGun> GunClass; // that is for forcing the blueprints only to allow subclass of AGun !
+
+
+this allow us to put as a blueprint property for the characther which type of subclass of Gun it can have
+//
+
+Lesson 190 , hiding the pre exisitng gun / bone
+ making the gun a child and placing it in the ahnds
+to add our weapon we add a socket
+
+
+Lesson 191 , Gun has public shoot function , call it trhough input biding through the shooter caracther class
+
+Lesson 192 , spawning particles
+SpawnEmmiterAttach and spawnEmmiter from gameplay satitcs. Here we sue skeletal mash unlike the ToonTank method
+
+
+Lesson 193 , Raycasting from the camera , from the carachter controller + drawing debug helpers
+Out parameters for GetPlayerViewPoint function 
+// Press 12 while selecting a class to open it up/////////////////////
+///////////////  ctrl + shift + p to look for a class  /////////////////////////
+
+Lesson 194 : Line Tracing by channel , ray casting , we can choose waht type of ebject will be able to block it. it is in world.h
+Or line trace by object type
+Object channel is different typoes of objects
+Trace channnel , the otehr way around , we got a bullet , what object can it hit ?
+We make our own trace channel for the bullet , a little bit funky to make it work
+Trace channel
+
+
+Lesson 195 , spawning particle at the impact point
+
+Lesson 196 , TakeDamage Functionof the actor ! Actor.h
+Pre buitl damge function + how ywe could be making our own damage types (poison , fire etc) . Point damage or radial damage 
+
+Lesson 197 , Virutal Methods in C++ , overidding paretns class methods , override function of a base class , it does dynamic dispatch . Per default c++ is efficeint it will use the function from the pointer type declared , even if the actual  object in tehre is a child , unless we use virtual method
+// Virtual keyword on the parent class ,
+//  override key word on the child class , not necessary but helpful to make sure we got it right
+
+
+Lesson 198 ,mOverriding TakeDamage
+
+Lesson 199 , Blending animation by booleans , check a tick box and the caracther drops dead
+
+Lesson 200 , Blueprints pure node , linking the C++ code with a varaible inside the blueprints of animation  //  UFUNCTION !  BlueprintCallable  VS BlueprintPure
+//BluePrintPure means that there is not an execution pin ! No impact on waht is called , const fonction
+
+
+
+
+// AI ////////////////////
+Lesson 201 , Creating A Ai controller 
+Lesson 202 , AI focus , UE4 built in , the Ai turns towards the palyer , + priority levels
+Lesson 203 , AI movement , NAV MESH for gicing the naviagualbe surface to AI , calculate what is a route the AI can take and what is too steep for them , it allows the Ai to do its routing algorithhm on it
+
+Lesson 204 , Checking Line of sight 
+Lesson 205 Behaviour trees + blackboard, blackboard is the memory of the AI
+Lesson 206 Setting a Blackboard Key , accessing the blackboard through C++
+Lesson 207 , looking for palyer  on last  known location , Behaviour tree and decorators
+Lesson 208 Making a custom Behavior tree task in C++ , easier in blueprinnts .! An error will occur somehow !
+Lesson 210 . Making the inside of custom behaviour tree task , te Ai looks for you gets bored and come back to initial position
+
+Lesson 212 , Behaviour tree services . BTSERVICES , Running somethign at every tick whenver a particular path is active, right click on node and add sercie .
+
+We make a custom BTService as being update player location
+
+Lesson 213 , Ignoring actors , Removein the controller upon death and deleting capsule
+
+Lesson 214 , Ending the game , GameModeClass, PawnIsKilled
+LEsson 215 Game has ended and timers, timers is quite difficult and complicated function
+
+Lesson 216 Displaying a lost screen from C++ , widget blueprint, spawn wdiget from the player controller
+
+
+// NOTE ON THE TOP RIGHT OF THE EDITOR THE PARENT CLASS IS DISPLAYED , ALWAYS
+
+// WHEN WEIRD EEROR MISSING EXTERNAL SYMBOL ETC , MISSING A MODULE DEPENDENCY ! see lesson 216 . go in Simple_shooter.build.cs
+
+// #include "Blueprint/UserWidget.h" // we need that calss to create widget "!" , this is in another module than the standard one so we add to ahd in my simpleshooter.build the module "UMG" 
+
+Lesson217,  Iterate over acotr , TActorRange gives a list of actor and we iterate through it with a for loop
+Lesson 218 Same for win 
+
+Remarq, USUALLY UI is called by player controller so it is normal to find it there 
+
+
+Lesson 219 Pulltriger refactoring
+
+Lesson 220 Attaching sound to components of the character
+
+Lesson 221 Randomised sound cue , unreal feature called soundCue 
+
+LEsson 222 Sound Spazilisation  , the furthest the soudn the quieter it gets , left and right speaker
+
+Lesson 223 CrossHair and Hud
+
+// 	UPROPERTY() // this is to be sure that it is garbaged collected 
+	UUserWidget* HUD;
+
+Lesson 224 , healthbar , expose a function from our class to Bluepritns and Widgets
+
+//
+
+UFUNCTION(BlueprintPure) 
+	float GetHealthPercent() const;
+//
+
+
+Lesson 225 AimOffset , animation to look up and down , additive animation !
++fixing it for AI
+
+Lesson 226 Animation State Machines , Jumping and blending between animation state , nested sate machines
+
