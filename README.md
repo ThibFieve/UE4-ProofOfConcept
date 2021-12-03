@@ -26,12 +26,8 @@ This is more of a Tech Demo than a fully fledge game , as you can escape the roo
 
 The goal of this game is to escape the room , by grabbing and moving objects. Press right click to grab objects.  
 
-The game has :  
--Physics of object   
--Grabbing of Object-> Ray Casting  
--Use of collision volume and trigger volumes   
--Physics Based collision : ie the door will only open if an Object , or many of them are heavy enough  on the pressure plate.  
--Hand Made Implementation of the Moon using BluePrints
+![Capture](https://user-images.githubusercontent.com/17762123/144610644-801c6bdd-e9cf-49c1-a7d8-c5e4efa7bbc1.PNG)
+
 
 You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
 
