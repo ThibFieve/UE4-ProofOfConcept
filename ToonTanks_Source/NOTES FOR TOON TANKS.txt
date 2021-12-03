@@ -1,0 +1,55 @@
+Handeling HitEven in UE4 
+
+
+
+
+
+Attachment trhough C++ , EVEN THE CAMERA , but it's waaaaaay easier to do it via blueprints !
+
+
+
+
+Lesson 157 , MULTICAST delegate
+Casting,
+Child and parents class
+Template functions
+forward declaration 
+Timer events , and independant of the framerate
+UPROPERTY macro UPROPERTY and UFUNCTION
+Linking Blueprints to C++ code , also called the "reflection system"
+Lesson 157 , MULTICAST delegate, a varaible that contains a list of function that it will call with pre defined input when soemthing cahnges in that varaible, it says broadcast !
+Health Component class with mutlicast delegate for Damage systen of UE4
+auto  , allows the compiler to figure out the type of a variable
+we want a UClass of the class UDamageType , to do so we can call a static function called StaticClass
+//  //ATower::StatiClass() returns teh Uclass !
+or 
+TSubclassOf<class UMatineeCameraShake> DeathCameraShakeClass;
+
+AGamemode class , derived from actor class , or GameModebBase , 
+
+Public Get function and code best practice, public classes access
+Custom controller class for input deletion when starting or dead
+
+Timer System and Time delegate of the UE4, Making Our own Delegate Variable for time management and delayed input lesson 163
+
+Blueprint implemetable events , lesson 164 , function called in C++ but implemented in bluepritns they cannot be private.  -> UFUNCTION(BlueprintImplementableEvent)
+StartGame and GameOver lesson 164 and 167
+
+
+
+Using Widget to print on the screen , lesson 164 , widget are for displaying things on screen like text
+Switch nodes blueprints lesson 165
+
+
+Particle System
+
+Camera Shake handling
+
+
+// TSublassOf returns a class pointer, Cast returns the object pointer in a parent type
+
+//  //ATower::StatiClass() returns teh Uclass !
+
+//remark when passing a adress of a fucntion dont put thte ()
+
+// wolrd context object  , use  "this"

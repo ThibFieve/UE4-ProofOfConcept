@@ -1,0 +1,15 @@
+You're mixing two different concepts here.
+
+Every object (in the general sense of an "object" in a C++ program, not only UObjects) are represented as "classes" in code (and everything is code in Unreal, even Blueprints under the hood).
+
+A class represents a cohesive unit of code, an abstract entity in you game/application, so Actors and Components are both implemented as classes.
+
+Actors are the class that represents a game entity, with its own identity (a tank, an enemy tower), while components are added to the Actor to provide the logic, what makes the game what it is.
+
+Classes are not the objects themselves, but "recipes" for building instances, the runtime objects that live in your game/application.
+
+The relation between a Pawn class and an Actor class is that a Pawn IS-A Actor.
+
+The relation between an Actor class and a Component class is that an Actor HAS-A component (look up inheritance and composition, as well as other OOP concepts).
+
+They're both classes (they couldn't be anything else) !
