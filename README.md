@@ -37,3 +37,17 @@ The game has :
 
 # SPOILERS
 You can escape by putting the Gargol hidden inside a pot on the right on the right alter , you can also move the other Gargol from one alter to another or even step on top of the Alter.
+
+
+
+
+
+# Toon Tanks
+
+![Toon1](https://user-images.githubusercontent.com/17762123/144607727-3a8bdc72-3d52-4c19-bc47-fe648461f61a.PNG)
+![Toon2](https://user-images.githubusercontent.com/17762123/144607744-c2c6bb60-57d2-498a-9dba-2ef4b2eac3e6.PNG)
+Download Link : https://drive.google.com/drive/folders/1OtRfFV0qTt6jlminwdeY_usQ9rIJJcA5?usp=sharing
+![image](https://user-images.githubusercontent.com/17762123/144607825-98af2cd6-330b-44f4-a59b-57be18707fae.png)
+
+![Toon3](https://user-images.githubusercontent.com/17762123/144607754-1eb40bc3-4d74-40a5-ac53-9b70eb868397.PNG)
+
